@@ -1,0 +1,74 @@
+.m-paging {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.m-paging .m-page-number-group {
+    display: flex;
+}
+
+.m-paging .m-paging-center {
+    display: flex;
+}
+
+.m-paging button {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-width: 0px;
+    background-color: unset;
+}
+
+.m-paging .m-page-number-group button.m-page-number {
+    border-radius: 50%;
+    border: 1px solid #BBBBBB;
+}
+
+.m-paging .m-page-number-group button.m-page-number:hover {
+    background-color: #BBBBBB;
+    color: #000;
+    border-width: 1px;
+}
+
+.m-paging .m-page-number-group button.m-page-number-selected {
+    background-color: #019160;
+    border-width: 1px;
+}
+
+.m-page-grid {
+    position: relative;
+}
+
+.m-page-grid .m-paging {
+    position: absolute;
+    bottom: 0;
+}
+
+.m-btn-first {
+    background-image: url(../../assets/icon/btn-firstpage.svg);
+    opacity: .5;
+}
+
+.m-btn-prev {
+    background-image: url(../../assets/icon/btn-prev-page.svg);
+    opacity: .5;
+}
+
+.m-btn-next {
+    background-image: url(../../assets/icon/btn-next-page.svg);
+    opacity: .5;
+    ;
+}
+
+.m-btn-last {
+    background-image: url(../../assets/icon/btn-lastpage.svg);
+    opacity: .5;
+}

@@ -1,0 +1,22 @@
+.m-content {
+    position: absolute;
+    top: 48px;
+    left: 225px;
+    right: 0;
+    bottom: 0;
+    padding: 24px;
+}
+
+.m-page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.m-page-header .m-page-title {
+    font-weight: 700;
+    font-size: 24px;
+}

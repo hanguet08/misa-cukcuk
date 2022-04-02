@@ -1,0 +1,137 @@
+select.m-combobox {
+    box-sizing: border-box;
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    outline: none;
+    border-radius: 4px;
+    width: 200px;
+    padding-left: 16px;
+    margin-left: 16px;
+}
+
+select:focus {
+    border-color: #019160;
+}
+
+
+/*css vue 2/4*/
+
+.cbbox {
+    height: 40px;
+    min-width: 100px;
+    /* margin-left: 10px; */
+    width: 200px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    position: relative;
+    z-index: 100;
+    /* box-sizing: border-box; */
+    /* display: flex;
+        flex-direction: column; */
+}
+
+.cbbox.cbb-activate {
+    border: 1px solid #019160;
+}
+
+.cbbox .select-list {
+    width: 100%;
+    height: 0;
+    overflow-y: hidden;
+    position: absolute;
+    top: 41px;
+    background-color: white;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    opacity: 0;
+}
+
+.cbbox .select-list.sl-activate {
+    opacity: 1;
+    overflow: visible;
+    height: auto;
+    padding: 4px 0;
+    z-index: 101;
+}
+
+.cbbox .select-list.sl-activate+.select .cbbox-button .fa-angle-down {
+    transform: rotateX(180deg);
+}
+
+.cbbox .select-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.cbbox .select-item:hover {
+    background-color: #e9ebee;
+}
+
+.cbbox .select-item-text {
+    margin-left: 10px;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cbbox .fa-check {
+    opacity: 0;
+}
+
+.cbbox .select-item.selected-item .fa-check {
+    opacity: 1;
+}
+
+.cbbox .select-item.selected-item {
+    background-color: #019160;
+    color: white;
+}
+
+.cbbox .select {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.cbbox-input {
+    width: calc(100% - 41px) !important;
+    border: none !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: GoogleSans-Regular;
+}
+
+.cbbox-input:focus {
+    border: none !important;
+}
+
+.cbbox-button {
+    width: 40px;
+    height: 40px;
+    border-left: 1px solid #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.cbbox-button:hover {
+    background-color: #E9EBEE;
+}
+
+.cbbox-label {
+    position: absolute;
+    top: -17px;
+    font-weight: bold;
+}

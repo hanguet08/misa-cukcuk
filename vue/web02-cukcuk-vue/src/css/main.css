@@ -1,0 +1,49 @@
+@import url(base/button.css);
+@import url(base/combobox.css);
+@import url(base/input.css);
+@import url(base/table.css);
+@import url(common/common.css);
+@import url(base/paging.css);
+@import url(base/dialog.css);
+@import url(base/toast.css);
+@import url(base/toolbar.css);
+@import url(base/checkbox.css);
+@import url(base/confirm.css);
+@import url(base/toastmsg.css);
+
+/*@import url(./layout/content.css);
+@import url(./layout/header.css);
+@import url(./layout/navbar.css);*/
+
+body {
+    margin: 0;
+    font-family: MISA GoogleSans;
+    font-size: 13px;
+}
+
+.m-row {
+    width: 100%;
+    padding: 0px 16px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: MISA GoogleSans;
+    src: url(../assets/font/GoogleSans-Regular.otf);
+}
+
+@font-face {
+    font-family: MISA GoogleSans Bold;
+    src: url(../assets/font/GoogleSans-Bold.otf);
+}
+
+@font-face {
+    font-family: MISA GoogleSans Italic;
+    src: url(../assets/font/GoogleSans-Italic.otf
+);
+}
+
+.border-red {
+    border: 1px solid red;
+}

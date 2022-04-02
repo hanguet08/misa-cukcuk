@@ -1,0 +1,60 @@
+.m-input {
+    box-sizing: border-box;
+    padding: 0px 16px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #bbbbbb;
+    height: 40px;
+    font-family: GoogleSans;
+}
+
+select.m-input {
+    width: 220px;
+    height: 42px;
+}
+
+input[type="date"] {
+    font-family: MISA GoogleSans;
+}
+
+.m-input:focus {
+    border-color: #019160;
+}
+
+.m-input-error {
+    border-color: #FF4747;
+}
+
+.m-error-box {
+    position: relative;
+    background-color: #FF4747;
+    color: #ffff;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 4px;
+    z-index: 1;
+}
+
+.m-box-arrow .error-text {
+    position: relative;
+    z-index: 2;
+}
+
+.m-error-box .m-box-arrow {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    z-index: 99;
+    background-color: #FF4747;
+    transform: translate(-50%, -25%) rotate(45deg);
+    left: 50%;
+    z-index: 0;
+}
+
+.m-input-icon {
+    background-repeat: no-repeat;
+    background-position: 16px center;
+    padding-left: 40px;
+    padding-right: 16px;
+}

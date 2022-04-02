@@ -1,0 +1,66 @@
+    .m-table {
+        border-collapse: collapse;
+        border: none;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+    
+    .m-table tr {
+        border-bottom: 1px solid #bbbbbb;
+        height: 48px;
+    }
+    
+    table.m-table th {
+        position: sticky;
+        top: 0;
+        background-color: #FFFF;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .m-table td,
+    th {
+        padding: 0 10px;
+    }
+    
+    .m-table td,
+    .m-table th {
+        font-size: 13px;
+        height: 48px;
+        padding-left: 10px;
+    }
+    
+    table.m-table tbody tr>:first-child {
+        padding-left: 16px;
+    }
+    
+    .m-table tbody tr:hover {
+        background-color: #EBF4FF;
+        cursor: pointer;
+    }
+    
+    .m-table tbody tr.m-row-selected {
+        background-color: #E3F3EE;
+    }
+    
+    .m-grid {
+        width: 100%;
+        box-sizing: border-box;
+        scrollbar-width: thin;
+    }
+    
+    .m-grid .m-grid-table {
+        width: 100%;
+        height: calc(100vh - 224px);
+        /* overflow: scroll;*/
+        /*31/3/2022 by hang*/
+        overflow: auto;
+    }
+    
+    .m-grid .m-paging {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }

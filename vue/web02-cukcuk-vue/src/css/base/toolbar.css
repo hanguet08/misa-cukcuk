@@ -1,0 +1,23 @@
+.m-page-toolbar {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    margin: 4px 0;
+    height: 56px;
+    width: 100%;
+}
+
+.m-page-toolbar .m-toolbar-right {
+    display: flex;
+    justify-content: center;
+}
+
+.m-page-toolbar button {
+    margin-left: 8px;
+}
+
+.m-toolbar-left {
+    height: 40px;
+    width: calc(100% - 40px);
+}

@@ -1,0 +1,36 @@
+.m-navbar {
+    height: calc(100vh - 48px);
+    width: 225px;
+    border-right: 1px solid #bebebe;
+}
+
+.m-navbar .m-menu-item {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.m-navbar .m-menu-item.router-link-active {
+    background-color: #019160 !important;
+    color: #fff !important;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.m-navbar .m-menu-item:hover {
+    background-color: #E5E5E5;
+    cursor: pointer;
+}
+
+.m-navbar .m-menu-item .m-menu-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin-right: 8px;
+    line-height: 20px;
+}

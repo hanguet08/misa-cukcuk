@@ -1,0 +1,302 @@
+.m-dialog {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.m-dialog-show {
+    display: block;
+}
+
+.m-dialog .m-dialog-content {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #e9ebee;
+    box-sizing: border-box;
+}
+
+
+/*-------------------
+    Nút đóng dialog
+---------------------*/
+
+.m-dialog-header .close-dialog {
+    width: 24px;
+    height: 24px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 4px;
+    font-size: 20px;
+    color: #646778;
+    float: right;
+}
+
+.m-dialog-header .close-dialog:hover,
+.m-dialog-header .close-dialog:focus {
+    color: #000000;
+    background-color: #E5E5E5;
+}
+
+
+/*--------------------------------
+    Custom chiều rộng chiều cao
+    cho từng loại Dialog
+----------------------------------*/
+
+.m-dialog.m-warning-dialog .m-dialog-content {
+    width: 400px;
+    height: 200px;
+}
+
+.m-dialog.m-delete-dialog .m-dialog-content {
+    width: 400px;
+    height: 200px;
+}
+
+.m-dialog.m-notify-dialog .m-dialog-content {
+    width: 400px;
+    height: 200px;
+}
+
+.m-dialog.m-full-dialog .m-dialog-content {
+    width: fit-content;
+    height: fit-content;
+}
+
+
+/*-----------------------
+    Phần body của Dialog
+-------------------------*/
+
+.m-dialog-body {
+    height: calc(100% - 108px);
+    padding: 24px;
+    /* background-color: seagreen; */
+}
+
+.m-dialog-body .m-dialog-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+}
+
+.m-dialog-body .m-dialog-context {
+    display: flex;
+    /* background-color: red; */
+    margin-top: 24px;
+    height: calc(100% - 48px);
+}
+
+.m-dialog-body .m-dialog-context .m-dialog-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #FFC400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #F4F4F4;
+}
+
+.m-dialog-body .m-dialog-context .m-dialog-icon-warning {
+    color: #FFC400;
+}
+
+.m-dialog-body .m-dialog-context .m-dialog-icon-delete {
+    color: #F65454;
+}
+
+.m-dialog-body .m-dialog-context .m-dialog-text {
+    width: calc(100% - 40px);
+    margin-left: 10px;
+    /* background-color: royalblue; */
+    font-size: 13px;
+    color: #000000;
+}
+
+.m-dialog-body .m-dialog-context .m-dialog-text-notify {
+    font-size: 13px;
+    color: #000000;
+}
+
+
+/*--------------------------
+    Phần footer của dialog
+----------------------------*/
+
+.m-dialog-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+}
+
+.m-dialog-footer .group-btn-dialog {
+    padding: 10px 24px 10px 24px;
+    display: flex;
+}
+
+
+/*---------------------------------
+    Custom màu theo loại thông báo
+-----------------------------------*/
+
+.btn-cancel {
+    border: none;
+    background-color: #F4F4F4;
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus {
+    background-color: #E5E5E5;
+}
+
+.bg-warning {
+    background-color: #FFC400;
+}
+
+.bg-delete {
+    background-color: #F65454;
+}
+
+.btn-delete {
+    background-color: #F65454;
+}
+
+.btn-delete:hover {
+    background-color: #F65454;
+}
+
+
+/*----------------------------
+    Dialog thêm mới nhân viên
+------------------------------*/
+
+.context-left {
+    width: 200px;
+    height: 100%;
+    /* background-color: yellow; */
+}
+
+.context-left .m-avt-input {
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #e9ebee;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.context-left .m-avt-input .image-preview {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.context-left .m-avt-description {
+    display: flex;
+    justify-content: center;
+}
+
+.context-right {
+    width: calc(100% - 200px);
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+
+/*-----------------
+    Form
+-------------------*/
+
+.m-form {
+    height: 100%;
+}
+
+.m-form .m-form-title {
+    padding: 12px;
+}
+
+.m-under-title {
+    background-color: #019160!important;
+    height: 4px;
+    width: 80px;
+    margin-left: 12px;
+}
+
+.m-form-row {
+    display: flex;
+    justify-content: start;
+    margin-top: 10px;
+}
+
+.m-form-row .m-form-field {
+    margin-left: 10px;
+}
+
+
+/*----------------
+    Section label
+------------------*/
+
+.m-section-label {
+    font-family: GoogleSans Bold;
+    text-transform: uppercase;
+    position: relative;
+    height: 25px;
+}
+
+
+/*gạch chân*/
+
+.m-section-label::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 70px;
+    height: 5px;
+    background-color: #019160;
+}
+
+
+/*
+    input salary
+*/
+
+.input-salary::after {
+    content: ("VNĐ");
+    position: absolute;
+    top: 33px;
+    right: 5px;
+    font-family: GoogleSans Italic;
+}
+
+.m-input-label {
+    padding-left: 12px;
+}
+
+.m-dialog-footer .btn-cancel {
+    width: 80px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}

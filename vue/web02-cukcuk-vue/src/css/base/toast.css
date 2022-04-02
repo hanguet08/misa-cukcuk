@@ -1,0 +1,126 @@
+/*.m-toast-box {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+.m-toast-box .m-toast-item {
+    display: flex;
+    border-radius: 4px;
+    color: #000;
+    padding: 16px 8px 16px 16px;
+    align-items: center;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px;
+    background-color: #ffffff;
+   
+}
+
+.m-toast-box .m-toast-item .m-toast-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-toast-box .m-toast-item .m-toast-text {
+    color: #000000;
+    font-size: 13px;
+    margin: 0 8px;
+}
+
+.m-toast-box .m-toast-item .m-toast-close {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 0;
+}
+
+.m-toast-box .m-toast-item .m-toast-close:hover {
+    color: #000000;
+}
+*/
+
+
+/* Error */
+
+
+/*
+.m-toast-box .m-toast-item.m-toast-error .m-toast-icon {
+    color: #F65454;
+}
+
+.m-toast-box .m-toast-item.m-toast-error .m-toast-close {
+    color: #F65454;
+}
+
+.m-toast-box .m-toast-item.m-toast-error .m-toast-close:hover {
+    color: #000;
+}*/
+
+
+/* Success */
+
+
+/*
+.m-toast-box .m-toast-item.m-toast-success .m-toast-icon {
+    color: #01B075;
+}
+
+.m-toast-box .m-toast-item.m-toast-success .m-toast-close {
+    color: #01B075;
+}
+
+.m-toast-box .m-toast-item.m-toast-success .m-toast-close:hover {
+    color: #000;
+}
+
+*/
+
+
+/*Warning*/
+
+
+/*
+.m-toast-box .m-toast-item.m-toast-warning .m-toast-icon {
+    color: #F1C04E;
+}
+
+.m-toast-box .m-toast-item.m-toast-warning .m-toast-close {
+    color: #F1C04E;
+}
+
+.m-toast-box .m-toast-item.m-toast-warning .m-toast-close:hover {
+    color: #000;
+}*/
+
+
+/*Info*/
+
+
+/*
+.m-toast-box .m-toast-item.m-toast-info .m-toast-icon {
+    color: #0075FF;
+}
+
+.m-toast-box .m-toast-item.m-toast-info .m-toast-close {
+    color: #0075FF;
+}
+
+.m-toast-box .m-toast-item.m-toast-info .m-toast-close:hover {
+    color: #000;
+}
+
+*/
+
+
+/*css phần toast vue 1/4/2022*/
